@@ -7,6 +7,8 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Colophon from '../components/Colophon';
 
+// import AppStyle from '../assets/app.module.scss';
+
 export default () => {
   return (
     <div>
