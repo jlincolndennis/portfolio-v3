@@ -1,0 +1,27 @@
+.item {
+  border-left: 5px solid white;
+  padding-left: 25px;
+  width: 80%;
+  margin: 10px 25px 95px 25px;
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .dates {
+      text-align: right;
+      font-size: .7em;
+      font-weight: normal;
+    }
+  }
+
+  .role {
+    margin-bottom: 10px;
+  }
+
+  .techlist {
+    margin-bottom: 10px;
+    color: #DCF2B0;
+  }
+}
