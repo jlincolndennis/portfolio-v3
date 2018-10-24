@@ -3,7 +3,7 @@ import contactStyle from './05-contact.module.scss';
 
 const Contact = () => {
   return (
-    <div className={contactStyle.contact}>
+    <div id="contact" className={contactStyle.contact}>
       <h1>I See The Way You're Looking At Me...</h1>
       <p>You've made it this far, admit it, you're interested. Want to know more?</p>
 

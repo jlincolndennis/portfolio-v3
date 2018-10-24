@@ -9,7 +9,6 @@ class Experience extends Component {
     this.state = {experienceData};
   }
 
-
   render() {
     const experienceItems = this.state.experienceData.map((item) => {
       return (
@@ -21,7 +20,7 @@ class Experience extends Component {
     })
 
     return (
-      <div className={experienceStyle.experience}>
+      <div id="experience" className={experienceStyle.experience}>
         <h1>Experience!</h1>
         { experienceItems }
       </div>

@@ -1,16 +1,20 @@
 import React from 'react';
 import landingStyle from './01-landing.module.scss';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 const Landing = () => {
   return (
-    <div className={landingStyle.landing}>
-      <h1>J <span>Lincoln</span> Dennis</h1>
-      <ul>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
+    <div id="landing" className={landingStyle.landing}>
+
+        <h1>J <span>Lincoln</span> Dennis</h1>
+        <ul>
+          <li><AnchorLink offset='95' href="#about">About</AnchorLink></li>
+          <li><AnchorLink offset='95' href="#experience">Experience</AnchorLink></li>
+          <li><AnchorLink offset='95' href="#projects">Projects</AnchorLink></li>
+          <li><AnchorLink offset='95' href="#contact">Contact</AnchorLink></li>
+        </ul>
+  
       <div className={landingStyle.blurb}>
         <h2>Hi. I'm a web developer living in Colorado.</h2>
         <p>

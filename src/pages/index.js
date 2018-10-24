@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 
 import Header from '../components/00-Header';
 import Landing from '../components/01-Landing';
@@ -12,14 +12,16 @@ import Colophon from '../components/06-Colophon';
 
 export default () => {
   return (
-    <div>
-      <Header />
-      <Landing />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Colophon />
-    </div>
-  )
+      <div id="home">
+        <Header />
+        <Landing />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Colophon />
+      </div>
+    )
+
+
 }

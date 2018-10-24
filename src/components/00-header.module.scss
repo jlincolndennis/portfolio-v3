@@ -1,9 +1,52 @@
 .header {
-  border-bottom: 1px solid #EDF4ED;
-  padding: 25px;
+  // display: none;
+  display: flex;
+  position: fixed;
+  background: rgb(17, 54, 72);
+  top: 0;
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid #264858;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+
+    &.fixed {
+      visibility: visible;
+      opacity: 1;
+    }
 
   h1 {
-    font-size: 2em;
+    a {
+      color: #DCF2B0;
+      text-decoration: none;
+    }
+    font-size: 2.25em;
     margin: 0;
+
+    span {
+      color: rgb(17, 54, 72);
+      text-shadow:
+        -1px -1px 0 #DCF2B0,
+        1px -1px 0 #DCF2B0,
+        -1px 1px 0 #DCF2B0,
+        1px 1px 0 #DCF2B0;
+    }
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  ul > li {
+    display: inline-block;
+    zoom:1;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 0;
+
   }
 }

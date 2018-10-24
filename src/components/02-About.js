@@ -3,7 +3,7 @@ import aboutStyle from './02-about.module.scss';
 
 const About = () => {
   return (
-    <div className={aboutStyle.about}>
+    <div id="about" className={aboutStyle.about}>
       <div className={aboutStyle.skills}>
         <h1><span>Looking for</span><br />Full Stack Web Development?</h1>
         <div className={aboutStyle.wrapper}>
