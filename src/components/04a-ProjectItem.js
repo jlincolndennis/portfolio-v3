@@ -18,12 +18,25 @@ class ProjectItem extends Component {
     }
 
     this.renderTechList = this.renderTechList.bind(this);
+    this.renderProjectLinks = this.renderProjectLinks.bind(this);
     this.renderImages = this.renderImages.bind(this);
     this.toggle = this.toggle.bind(this);
   }
 
   renderTechList(list){
     return list.map((elm, i) => <span key={i}>{elm}</span>).reduce((prev, curr) => [prev, ' | ', curr])
+  }
+
+  renderProjectLinks(foo) {
+    const { visit, code } = foo;
+    return (
+      <span className={itemStyle.links}>
+        {
+          visit ? <span><a href={visit}>Visit</a>|</span>: null
+        }
+        <a href={code}>Code</a>
+      </span>
+    )
   }
 
   renderImages(urlList) {
@@ -97,23 +110,22 @@ class ProjectItem extends Component {
         <div className={itemStyle.item}>
           <h2 className={itemStyle.name}>
             <span>{name}</span>
-            <span className={itemStyle.links}>
-              <a href={url.visit}>Visit</a> | <a href={url.code}>Codebase</a>
-            </span>
+
+            {this.renderProjectLinks(url)}
+
           </h2>
           <p className={itemStyle.techlist}>{this.renderTechList(techlist)}</p>
           <h3 className={itemStyle.tagline}>{tagline}</h3>
           <div className={itemStyle.showMoreWrap}>
-          <button
-          className={itemStyle.showMore}
-          onClick={this.toggle}>Show {this.state.expandDetails ? 'Less' : 'More'}
-          </button>
+            <button
+              className={itemStyle.showMore}
+              onClick={this.toggle}>Show {this.state.expandDetails ? 'Less' : 'More'}
+            </button>
           </div>
           <AnimateHeight
             duration={ 500 }
             height={ height } >
             <DetailsPara />
-
           </AnimateHeight>
         </div>
 
