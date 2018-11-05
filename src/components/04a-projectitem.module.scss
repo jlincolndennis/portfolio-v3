@@ -1,8 +1,6 @@
 .item {
-  border-left: 5px solid white;
-  padding-left: 25px;
-  width: 80%;
-  margin: 10px 25px 95px 25px;
+  // width: 80%;
+  margin: 10px 30px 95px 30px;
   overflow: hidden;
 
   .name {
@@ -20,11 +18,62 @@
 
   .tagline {
     margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 1.25em;
   }
 
   .techlist {
     margin-bottom: 10px;
     color: #DCF2B0;
+  }
+
+  .details {
+    border-left: 5px solid white;
+    // padding-left: 25px;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 20px 25px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .embiggen-text {
+      font-style: italic;
+      font-size: .75em;
+    }
+  }
+
+  .image-thumbs {
+    display: flex;
+    justify-content: flex-start;
+
+    .img-wrap {
+      width: 200px;
+      margin-right: 20px;
+      margin-bottom: 5px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .show-more-wrap {
+    .show-more {
+      width: 150px;
+      padding: 3px 20px;
+      margin: 15px auto;
+      background-color: #9CFFFA;
+      color: rgb(17, 54, 72);
+      border-radius: 3px;
+      border-color: rgb(17, 54, 72);
+
+    }
   }
 
 }

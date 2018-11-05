@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withPrefix } from 'gatsby'
 
 import itemStyle from './04a-projectitem.module.scss';
 import AnimateHeight from 'react-animate-height';
@@ -13,12 +14,36 @@ class ProjectItem extends Component {
     }
 
     this.renderTechList = this.renderTechList.bind(this);
+    this.renderImages = this.renderImages.bind(this);
     this.toggle = this.toggle.bind(this);
   }
 
   renderTechList(list){
     return list.map((elm, i) => <span key={i}>{elm}</span>).reduce((prev, curr) => [prev, ' | ', curr])
   }
+
+  renderImages(urlList) {
+    if(urlList) {
+    const imageThumbs = urlList.map( (elm, i) => {
+      return (
+        <div key={elm} className={itemStyle.imgWrap}>
+          <img src={withPrefix(`/images/${elm}.png`)} />
+        </div>
+      )
+    })
+
+      return (
+        <div>
+          <h3>Preview:</h3>
+          <div className={itemStyle.imageThumbs}>
+            {imageThumbs}
+          </div>
+          <p className={itemStyle.embiggenText}>(Click to embiggen)</p>
+        </div>
+      )
+    }
+  }
+
 
   toggle() {
     let { height } = this.state;
@@ -30,12 +55,13 @@ class ProjectItem extends Component {
   }
 
   render() {
-    const { name, url, tagline, techlist, details } = this.props.item;
+    const { name, url, tagline, techlist, details, imageUrls } = this.props.item;
     const { isOpen, height } = this.state;
 
-    const DetailsPara = ()=> (
+    const DetailsPara = () => (
       <div className={itemStyle.details}>
         <p>{details}</p>
+        {this.renderImages(imageUrls)}
       </div>
     )
 
@@ -53,10 +79,14 @@ class ProjectItem extends Component {
             duration={ 500 }
             height={ height } >
             <DetailsPara />
+
           </AnimateHeight>
-          <button
-            onClick={this.toggle}>Show {this.state.isOpen ? 'Less' : 'More'}
-          </button>
+          <div className={itemStyle.showMoreWrap}>
+            <button
+              className={itemStyle.showMore}
+              onClick={this.toggle}>Show {this.state.isOpen ? 'Less' : 'More'}
+            </button>
+          </div>
         </div>
 
     )

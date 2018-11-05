@@ -45,7 +45,10 @@ const projectData = [
       "Token-Based Auth"
     ],
     tagline: "A 'Mad Libs' inspired web application that allows users to smash out randomly generated stories, save them to their profile, and have them read aloud.",
-    details: "StorySmasher was my Capstone Project at Galvanize. Built in just under two weeks, and featuring a Rails API (with no prior knowledge of Rails) it was an ambitious undertaking to say the least. I've always been interested in the intersection of art and technology, and thanks to the Tracery library, I was able to make an app that pumps out random and awesome stories about Space Janitors battling Cthulhu."
+    details: "StorySmasher was my Capstone Project at Galvanize. Built in just under two weeks, and featuring a Rails API (with no prior knowledge of Rails) it was an ambitious undertaking to say the least. I've always been interested in the intersection of art and technology, and thanks to the Tracery library, I was able to make an app that pumps out random and awesome stories about Space Janitors battling Cthulhu.",
+    imageUrls: [
+      'storysmash01', 'storysmash02', 'storysmash03'
+    ]
   },
   {
     id: 2,
@@ -60,7 +63,10 @@ const projectData = [
       "Token-Based Auth"
     ],
     tagline: "A music recommendation application that allows logged in users to share tracks from their favorite albums, and vote and leave comments on other users’ recommendations.",
-    details: "tuneUp began its life as an exercise in learning AngularJS’s component-based architecture. The scope of the project was expanded to include utilizing the Revealing Module Pattern, and to follow John Papa’s style guide. After exhausting myself with all of those buzzwords, I decided to make the app a music recommendation service because I think music, in general, is pretty rad."
+    details: "tuneUp began its life as an exercise in learning AngularJS’s component-based architecture. The scope of the project was expanded to include utilizing the Revealing Module Pattern, and to follow John Papa’s style guide. After exhausting myself with all of those buzzwords, I decided to make the app a music recommendation service because I think music, in general, is pretty rad.",
+    imageUrls: [
+      'tuneup01', 'tuneup02',
+    ]
   },
   {
     id: 3,
