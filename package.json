@@ -18,6 +18,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-animate-height": "^2.0.6",
     "react-dom": "^16.5.1",
+    "react-image-lightbox": "^5.0.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"
   }

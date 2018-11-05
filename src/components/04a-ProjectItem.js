@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withPrefix } from 'gatsby'
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 import itemStyle from './04a-projectitem.module.scss';
 import AnimateHeight from 'react-animate-height';
@@ -9,8 +11,10 @@ class ProjectItem extends Component {
     super(props);
 
     this.state = {
+      expandDetails: false,
+      height: 0,
+      photoIndex: 0,
       isOpen: false,
-      height: 0
     }
 
     this.renderTechList = this.renderTechList.bind(this);
@@ -23,11 +27,15 @@ class ProjectItem extends Component {
   }
 
   renderImages(urlList) {
+    const { photoIndex, isOpen } = this.state;
     if(urlList) {
+    const imageList = [];
     const imageThumbs = urlList.map( (elm, i) => {
+      imageList.push(withPrefix(`/images/${elm}.png`));
+
       return (
         <div key={elm} className={itemStyle.imgWrap}>
-          <img src={withPrefix(`/images/${elm}.png`)} />
+          <img src={withPrefix(`/images/${elm}.png`)} onClick={() => this.setState({ isOpen: true, photoIndex: i })}/>
         </div>
       )
     })
@@ -38,7 +46,27 @@ class ProjectItem extends Component {
           <div className={itemStyle.imageThumbs}>
             {imageThumbs}
           </div>
-          <p className={itemStyle.embiggenText}>(Click to embiggen)</p>
+          <p className={itemStyle.embiggenText}>(Click an image to embiggen)</p>
+          {isOpen && (
+          <Lightbox
+            mainSrc={imageList[photoIndex]}
+            nextSrc={imageList[(photoIndex + 1) % imageList.length]}
+            prevSrc={imageList[(photoIndex + imageList.length - 1) % imageList.length]}
+            enableZoom={false}
+            imagePadding={50}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + imageList.length - 1) % imageList.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % imageList.length,
+              })
+            }
+          />
+        )}
         </div>
       )
     }
@@ -49,14 +77,14 @@ class ProjectItem extends Component {
     let { height } = this.state;
 
     this.setState({
-      isOpen: !this.state.isOpen,
+      expandDetails: !this.state.expandDetails,
       height: height === 0 ? 'auto' : 0,
     });
   }
 
   render() {
     const { name, url, tagline, techlist, details, imageUrls } = this.props.item;
-    const { isOpen, height } = this.state;
+    const { expandDetails, height } = this.state;
 
     const DetailsPara = () => (
       <div className={itemStyle.details}>
@@ -75,18 +103,18 @@ class ProjectItem extends Component {
           </h2>
           <p className={itemStyle.techlist}>{this.renderTechList(techlist)}</p>
           <h3 className={itemStyle.tagline}>{tagline}</h3>
+          <div className={itemStyle.showMoreWrap}>
+          <button
+          className={itemStyle.showMore}
+          onClick={this.toggle}>Show {this.state.expandDetails ? 'Less' : 'More'}
+          </button>
+          </div>
           <AnimateHeight
             duration={ 500 }
             height={ height } >
             <DetailsPara />
 
           </AnimateHeight>
-          <div className={itemStyle.showMoreWrap}>
-            <button
-              className={itemStyle.showMore}
-              onClick={this.toggle}>Show {this.state.isOpen ? 'Less' : 'More'}
-            </button>
-          </div>
         </div>
 
     )
