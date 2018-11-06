@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import debounce from 'lodash.debounce';
 
-import headerStyle from './00-header.module.scss';
+import headerStyle from './header.module.scss';
 
 class Header extends Component {
   constructor(props){

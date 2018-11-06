@@ -3,7 +3,7 @@ import { withPrefix } from 'gatsby'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
-import itemStyle from './04a-projectitem.module.scss';
+import itemStyle from './projectitem.module.scss';
 import AnimateHeight from 'react-animate-height';
 
 class ProjectItem extends Component {

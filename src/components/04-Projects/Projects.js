@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import projectsStyle from './04-projects.module.scss';
-import ProjectItem from './04a-ProjectItem.js'
+import projectsStyle from './projects.module.scss';
+import ProjectItem from './ProjectItem/ProjectItem.js'
 
 class Projects extends Component {
   constructor(props) {

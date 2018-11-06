@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import itemStyle from './03a-experienceitem.module.scss';
+import itemStyle from './experienceitem.module.scss';
 
 class ExperienceItem extends Component {
   constructor(props) {

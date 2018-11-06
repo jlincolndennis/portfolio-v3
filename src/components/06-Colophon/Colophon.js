@@ -1,5 +1,5 @@
 import React from 'react';
-import colophonStyle from './06-colophon.module.scss';
+import colophonStyle from './colophon.module.scss';
 
 const Colophon = () => {
   return (

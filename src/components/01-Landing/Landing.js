@@ -1,7 +1,7 @@
 import React from 'react';
-import landingStyle from './01-landing.module.scss';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import landingStyle from './landing.module.scss';
 
 const Landing = () => {
   return (
@@ -14,7 +14,7 @@ const Landing = () => {
           <li><AnchorLink offset='95' href="#projects">Projects</AnchorLink></li>
           <li><AnchorLink offset='95' href="#contact">Contact</AnchorLink></li>
         </ul>
-  
+
       <div className={landingStyle.blurb}>
         <h2>Hi. I'm a web developer living in Colorado.</h2>
         <p>
