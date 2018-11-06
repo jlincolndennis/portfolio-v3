@@ -88,7 +88,7 @@ const projectData = [
     id: 4,
     name: "This Week In Marvel History",
     url: {
-      visit: null,
+      visit: "http://jlincolndennis.github.io/marvel-history.github.io/index.html",
       code: "https://github.com/blakeface/whereabouts"
     },
     techlist: [
@@ -96,7 +96,10 @@ const projectData = [
       "Marvel Comics API",
     ],
     tagline: "Browse the vast and interesting publication history of Marvel Comics with this front-end web app that utilizes the Official Marvel Comics API.",
-    details: "The one that started it all (my 'origin story', if you will), this app was a front end only project, mainly because front end was all I knew when I did it. It was also my first experience interacting with APIs and my introduction to JSON objects. What I was able to accomplish with this somewhat limited toolset has also retroactively given me an even greater respect for Angular and other frontend frameworks. Using jQuery to append all those divs? Oh, you sweet summer child."
+    details: "The one that started it all (my 'origin story', if you will), this app was a front end only project, mainly because front end was all I knew when I did it. It was also my first experience interacting with APIs and my introduction to JSON objects. What I was able to accomplish with this somewhat limited toolset has also retroactively given me an even greater respect for Angular and other frontend frameworks. Using jQuery to append all those divs? Oh, you sweet summer child.",
+    imageUrls: [
+      'marvelhistory01', 'marvelhistory02', 'marvelhistory03', 'marvelhistory04'
+    ]
   },
 
 
