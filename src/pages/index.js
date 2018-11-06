@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 
 import Header from '../components/00-Header';
 import Landing from '../components/01-Landing';

@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import aboutStyle from './02-about.module.scss';
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
             <p>SQL</p>
           </div>
         </div>
-        <h3>...if so, feel free to <a href="#">get in touch</a> with me!</h3>
+        <h3>...if so, feel free to <AnchorLink offset='95' href="#contact">get in touch</AnchorLink> with me!</h3>
       </div>
 
       <div className={aboutStyle.bio}>

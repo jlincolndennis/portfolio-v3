@@ -48,7 +48,7 @@ class ProjectItem extends Component {
 
       return (
         <div key={elm} className={itemStyle.imgWrap}>
-          <img src={withPrefix(`/images/${elm}.png`)} onClick={() => this.setState({ isOpen: true, photoIndex: i })}/>
+          <img src={withPrefix(`/images/${elm}.png`)} alt={elm} onClick={() => this.setState({ isOpen: true, photoIndex: i })}/>
         </div>
       )
     })
@@ -119,7 +119,7 @@ class ProjectItem extends Component {
           <div className={itemStyle.showMoreWrap}>
             <button
               className={itemStyle.showMore}
-              onClick={this.toggle}>Show {this.state.expandDetails ? 'Less' : 'More'}
+              onClick={this.toggle}>Show {expandDetails ? 'Less' : 'More'}
             </button>
           </div>
           <AnimateHeight
