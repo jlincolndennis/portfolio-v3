@@ -46,7 +46,7 @@ const experienceData = [
       'Google Maps API',
       'GitLab'
     ],
-    details: "Pariatur ipsum nostrud occaecat. Quis laboris voluptatibus, quibusdam duis non possumus despicationes est o duis efflorescere, deserunt do elit. Occaecat minim iis aliquip coniunctione nam velit voluptate graviterque.Aut labore possumus arbitror. Ut amet incididunt. Et export appellat, a aute aut minim si nam appellat fidelissimae, fore incididunt quo domesticarum, aute",
+    details: "Built feature-rich UX for an app that allows local and niche experts to create interactive travel guides. Designed and implemented Front End architecture utilizing new frameworks. Contributed to app-wide redesign. Maintained legacy codebase.",
   },
   {
     id: 2,
@@ -61,7 +61,7 @@ const experienceData = [
       'Ionic',
       'Node.js'
     ],
-    details: "Pariatur ipsum nostrud occaecat. Quis laboris voluptatibus, quibusdam duis non possumus despicationes est o duis efflorescere, deserunt do elit. Occaecat minim iis aliquip coniunctione nam velit voluptate graviterque.Aut labore possumus arbitror. Ut amet incididunt. Et export appellat, a aute aut minim si nam appellat fidelissimae, fore incididunt quo domesticarum, aute",
+    details: "Specialized in building Single Page Applications. Communicated with clients and aided in developing their ideas into actionable projects and prototypes.",
   },
   {
     id: 3,
@@ -79,6 +79,6 @@ const experienceData = [
       'Git/GitHub',
       'Agile Development'
     ],
-    details: "Pariatur ipsum nostrud occaecat. Quis laboris voluptatibus, quibusdam duis non possumus despicationes est o duis efflorescere, deserunt do elit. Occaecat minim iis aliquip coniunctione nam velit voluptate graviterque.Aut labore possumus arbitror. Ut amet incididunt. Et export appellat, a aute aut minim si nam appellat fidelissimae, fore incididunt quo domesticarum, aute",
+    details: "Completed intensive and competitive full-time training program. Developed complex projects both independently and in small teams. ",
   },
 ]
