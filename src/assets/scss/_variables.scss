@@ -1,1 +1,27 @@
-$body-color: dodgerblue;
+// Color Scheme
+$body-color: rgb(17, 54, 72);
+
+$text-color: #EDF4ED;
+
+$link-color: #9CFFFA;
+
+$level1-color: #DCF2B0;
+// Option 1 #A5FFD6;
+// Option 2 #97F9F9;
+// Option 3 #DCF2B0;
+
+$level2-color: #9CFFFA;
+// Option 1 #EAFDF8;
+// Option 2 #A4DEF9;
+// Option 3 #9CFFFA;
+
+$level3-color: #E8D7F1;
+
+@mixin outline-text {
+    color: $body-color;
+    text-shadow:
+      -1px -1px 0 $level1-color,
+      1px -1px 0 $level1-color,
+      -1px 1px 0 $level1-color,
+      1px 1px 0 $level1-color;
+}

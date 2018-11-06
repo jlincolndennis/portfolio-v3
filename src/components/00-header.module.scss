@@ -1,8 +1,9 @@
+@import "../assets/scss/_variables.scss";
+
 .header {
-  // display: none;
   display: flex;
   position: fixed;
-  background: rgb(17, 54, 72);
+  background: $body-color;
   top: 0;
   height: 75px;
   width: 100%;
@@ -21,19 +22,14 @@
 
   h1 {
     a {
-      color: #DCF2B0;
+      color: $level1-color;
       text-decoration: none;
     }
     font-size: 2.25em;
     margin: 0;
 
     span {
-      color: rgb(17, 54, 72);
-      text-shadow:
-        -1px -1px 0 #DCF2B0,
-        1px -1px 0 #DCF2B0,
-        -1px 1px 0 #DCF2B0,
-        1px 1px 0 #DCF2B0;
+      @include outline-text;
     }
   }
 

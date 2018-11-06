@@ -1,38 +1,26 @@
 @import "./scss/_variables.scss";
 
 body {
-  background: rgb(17, 54, 72);
-  color: #EDF4ED;
+  background: $body-color;
+  color: $text-color;
 
   h1 {
-    // Option 1
-    // color: #A5FFD6;
-    // Option 2
-    // color: #97F9F9;
-    // Option 3:
-    color: #DCF2B0;
+    color: $level1-color;
     font-weight: 600;
-
   }
 
   h2 {
-    // Option 1
-    // color: #EAFDF8;
-    // Option 2
-    // color: #A4DEF9;
-    // Option 3:
-    color: #9CFFFA;
+    color: $level2-color;
     font-weight: 500;
   }
 
   h3 {
-    // font-weight: normal;
-    // color: #E8D7F1;
+    color: $level3-color;
     font-weight: 500;
   }
 
   a {
-    color: #9CFFFA;
+    color: $link-color;
     text-decoration: none;
 
     &:hover {
@@ -40,8 +28,4 @@ body {
     }
   }
 
-  .read-more {
-    color: #283845;
-    font-style: italic;
-  }
 }

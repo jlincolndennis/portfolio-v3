@@ -1,5 +1,6 @@
-.item {
+@import "../assets/scss/_variables.scss";
 
+.item {
   width: 80%;
   margin: 10px 25px 95px 25px;
 
@@ -21,7 +22,7 @@
 
   .techlist {
     margin-bottom: 10px;
-    color: #DCF2B0;
+    color: $level1-color;
   }
 
   .details {

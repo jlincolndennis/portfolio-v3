@@ -1,3 +1,5 @@
+@import "../assets/scss/_variables.scss";
+
 .about {
   clear: both;
   margin: 100px 150px;
@@ -24,12 +26,7 @@
       margin-bottom: 5px;
 
       span {
-        color: rgb(17, 54, 72);
-        text-shadow:
-          -1px -1px 0 #DCF2B0,
-          1px -1px 0 #DCF2B0,
-          -1px 1px 0 #DCF2B0,
-          1px 1px 0 #DCF2B0;
+        @include outline-text;
       }
     }
 
@@ -48,7 +45,7 @@
       text-align: center;
 
       a {
-        color: #DCF2B0;
+        color: $level1-color;
       }
     }
 
