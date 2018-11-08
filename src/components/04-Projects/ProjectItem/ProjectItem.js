@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { withPrefix } from 'gatsby'
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+
+import Details from './details.js';
+// import 'react-image-lightbox/style.css';
 
 import itemStyle from './projectitem.module.scss';
 import AnimateHeight from 'react-animate-height';
@@ -13,13 +13,11 @@ class ProjectItem extends Component {
     this.state = {
       expandDetails: false,
       height: 0,
-      photoIndex: 0,
-      isOpen: false,
+
     }
 
     this.renderTechList = this.renderTechList.bind(this);
     this.renderProjectLinks = this.renderProjectLinks.bind(this);
-    this.renderImages = this.renderImages.bind(this);
     this.toggle = this.toggle.bind(this);
   }
 
@@ -39,53 +37,6 @@ class ProjectItem extends Component {
     )
   }
 
-  renderImages(urlList) {
-    const { photoIndex, isOpen } = this.state;
-    if(urlList) {
-    const imageList = [];
-    const imageThumbs = urlList.map( (elm, i) => {
-      imageList.push(withPrefix(`/images/${elm}.png`));
-
-      return (
-        <div key={elm} className={itemStyle.imgWrap}>
-          <img src={withPrefix(`/images/${elm}.png`)} alt={elm} onClick={() => this.setState({ isOpen: true, photoIndex: i })}/>
-        </div>
-      )
-    })
-
-      return (
-        <div>
-          <h3>Preview:</h3>
-          <div className={itemStyle.imageThumbs}>
-            {imageThumbs}
-          </div>
-          <p className={itemStyle.embiggenText}>(Click an image to embiggen)</p>
-          {isOpen && (
-          <Lightbox
-            mainSrc={imageList[photoIndex]}
-            nextSrc={imageList[(photoIndex + 1) % imageList.length]}
-            prevSrc={imageList[(photoIndex + imageList.length - 1) % imageList.length]}
-            enableZoom={false}
-            imagePadding={50}
-            onCloseRequest={() => this.setState({ isOpen: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + imageList.length - 1) % imageList.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % imageList.length,
-              })
-            }
-          />
-        )}
-        </div>
-      )
-    }
-  }
-
-
   toggle() {
     let { height } = this.state;
 
@@ -99,13 +50,6 @@ class ProjectItem extends Component {
     const { name, url, tagline, techlist, details, imageUrls } = this.props.item;
     const { expandDetails, height } = this.state;
 
-    const DetailsPara = () => (
-      <div className={itemStyle.details}>
-        <p>{details}</p>
-        {this.renderImages(imageUrls)}
-      </div>
-    )
-
     return (
         <div className={itemStyle.item}>
           <h2 className={itemStyle.name}>
@@ -114,19 +58,20 @@ class ProjectItem extends Component {
             {this.renderProjectLinks(url)}
 
           </h2>
-          <p className={itemStyle.techlist}>{this.renderTechList(techlist)}</p>
           <h3 className={itemStyle.tagline}>{tagline}</h3>
-          <div className={itemStyle.showMoreWrap}>
+          <p className={itemStyle.techlist}>{this.renderTechList(techlist)}</p>
+          <AnimateHeight
+          duration={ 500 }
+          height={ height } >
+          <Details details={details} imageUrls={imageUrls}/>
+          </AnimateHeight>
+          <p className={itemStyle.showMoreBox}>
             <button
               className={itemStyle.showMore}
-              onClick={this.toggle}>Show {expandDetails ? 'Less' : 'More'}
+              onClick={this.toggle}>{expandDetails ? 'Show Less' : 'Details...'}
             </button>
-          </div>
-          <AnimateHeight
-            duration={ 500 }
-            height={ height } >
-            <DetailsPara />
-          </AnimateHeight>
+          </p>
+
         </div>
 
     )

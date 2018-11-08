@@ -22,7 +22,7 @@ class Projects extends Component {
 
     return (
       <div id="projects" className={projectsStyle.projects}>
-        <h1>Projects</h1>
+        <h1>Things I've Made</h1>
         { projectItems}
       </div>
     )

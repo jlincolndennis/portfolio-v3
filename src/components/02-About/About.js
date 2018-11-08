@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id="about" className={aboutStyle.about}>
       <div className={aboutStyle.skills}>
-        <h1><span>Looking for</span><br />Full Stack Web Development?</h1>
+        <h1>Full Stack Web Development</h1>
         <div className={aboutStyle.wrapper}>
           <div className={aboutStyle.col}>
             <p>JavaScript(ES6)</p>
@@ -26,7 +26,7 @@ const About = () => {
             <p>SQL</p>
           </div>
         </div>
-        <h3>...if so, feel free to <AnchorLink offset='95' href="#contact">get in touch</AnchorLink> with me!</h3>
+        <h3>Let's build something together. <AnchorLink offset='150' href="#contact">Contact me</AnchorLink> today.</h3>
       </div>
 
       <div className={aboutStyle.bio}>

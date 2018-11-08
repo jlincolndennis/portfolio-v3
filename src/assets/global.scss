@@ -1,31 +1,40 @@
 @import "./scss/_variables.scss";
 
+
+
 body {
   background: $body-color;
   color: $text-color;
+  // font-family: $main-font;
+}
 
-  h1 {
-    color: $level1-color;
-    font-weight: 600;
+h1 {
+  color: $level1-color;
+  font-weight: 700;
+}
+
+h2 {
+  color: $level2-color;
+  font-weight: 700;
+  // font-weight: lighter;
+}
+
+h3 {
+  color: $level3-color;
+  // font-weight: 500;
+  font-weight: 400;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
+}
 
-  h2 {
-    color: $level2-color;
-    font-weight: 500;
-  }
-
-  h3 {
-    color: $level3-color;
-    font-weight: 500;
-  }
-
-  a {
-    color: $link-color;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
+.content {
+  width: 1000px;
+  margin: 150px auto 50px;
 }

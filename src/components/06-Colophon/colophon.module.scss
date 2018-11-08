@@ -1,3 +1,16 @@
+@import "../../assets/scss/_variables.scss";
+
+
 .colophon {
-  margin: 100px;
+  text-align: center;
+  background: $box-color;
+  padding: 25px;
+
+  p {
+    margin-bottom: 5px;
+
+    .name {
+      color: #333533;
+    }
+  }
 }

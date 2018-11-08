@@ -7,12 +7,12 @@ const Landing = () => {
   return (
     <div id="landing" className={landingStyle.landing}>
 
-        <h1>J <span>Lincoln</span> Dennis</h1>
+        <h1>J<span>Lincoln</span>Dennis</h1>
         <ul>
-          <li><AnchorLink offset='95' href="#about">About</AnchorLink></li>
-          <li><AnchorLink offset='95' href="#experience">Experience</AnchorLink></li>
-          <li><AnchorLink offset='95' href="#projects">Projects</AnchorLink></li>
-          <li><AnchorLink offset='95' href="#contact">Contact</AnchorLink></li>
+          <li><AnchorLink offset='125' href="#about">About</AnchorLink></li>
+          <li><AnchorLink offset='125' href="#experience">Experience</AnchorLink></li>
+          <li><AnchorLink offset='125' href="#projects">Projects</AnchorLink></li>
+          <li><AnchorLink offset='150' href="#contact">Contact</AnchorLink></li>
         </ul>
 
       <div className={landingStyle.blurb}>

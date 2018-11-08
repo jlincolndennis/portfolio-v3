@@ -7,7 +7,8 @@
   top: 0;
   height: 75px;
   width: 100%;
-  border-bottom: 1px solid #264858;
+  // border-bottom: 1px solid #E1E8E1;
+  border-bottom: 2px solid $box-color;
   padding: 15px;
   align-items: center;
   justify-content: space-between;
@@ -22,8 +23,10 @@
 
   h1 {
     a {
-      color: $level1-color;
+      // color: $level1-color;
+      color: #333533;
       text-decoration: none;
+      font-weight: 900;
     }
     font-size: 2.25em;
     margin: 0;

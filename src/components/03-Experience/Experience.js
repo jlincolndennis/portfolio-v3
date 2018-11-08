@@ -21,7 +21,7 @@ class Experience extends Component {
 
     return (
       <div id="experience" className={experienceStyle.experience}>
-        <h1>Experience!</h1>
+        <h1>Experience & Training</h1>
         { experienceItems }
       </div>
     )
@@ -61,7 +61,7 @@ const experienceData = [
       'Ionic',
       'Node.js'
     ],
-    details: "Specialized in building Single Page Applications. Communicated with clients and aided in developing their ideas into actionable projects and prototypes.",
+    details: "Specializing in building Single Page Applications. I work with clients in developing their ideas into actionable projects and prototypes.",
   },
   {
     id: 3,

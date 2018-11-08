@@ -1,27 +1,46 @@
+// @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+// $main-font: 'Lato', sans-serif;
+
+
 // Color Scheme
-$body-color: rgb(17, 54, 72);
+// $body-color: rgb(17, 54, 72);
+// $body-color: #202C39;
+$body-color: #F7FFF7;
 
-$text-color: #EDF4ED;
+$text-color: #707070;
+// $text-color: #707070;
 
-$link-color: #9CFFFA;
+$link-color: #BF1363;
 
-$level1-color: #DCF2B0;
+$level1-color: #BF1363;
+// $level1-color: #E8570A;
+
+
+// $level1-color: #06565E;
 // Option 1 #A5FFD6;
 // Option 2 #97F9F9;
 // Option 3 #DCF2B0;
 
-$level2-color: #9CFFFA;
+$level2-color: #333533;
+// $level2-color: #131515;
 // Option 1 #EAFDF8;
 // Option 2 #A4DEF9;
 // Option 3 #9CFFFA;
 
-$level3-color: #E8D7F1;
+$level3-color: #707070;
+
+$border-color: #707070;
+
+$box-color: #EAF2EA;
 
 @mixin outline-text {
-    color: $body-color;
-    text-shadow:
-      -1px -1px 0 $level1-color,
-      1px -1px 0 $level1-color,
-      -1px 1px 0 $level1-color,
-      1px 1px 0 $level1-color;
+    // font-style: italic;
+    color: $link-color;
+    // color: $level3-color;
+    // text-shadow:
+    //   -1px -1px 0 $level1-color,
+    //   1px -1px 0 $level1-color,
+    //   -1px 1px 0 $level1-color,
+    //   1px 1px 0 $level1-color;
 }

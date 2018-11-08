@@ -1,13 +1,17 @@
 @import "../../assets/scss/_variables.scss";
 
 .landing {
-  margin: 200px 150px;
-  // width: 90%;
+  margin-bottom: 200px;
+
 
   h1{
     font-size: 5.5em;
     margin-bottom: 0;
     text-align: right;
+    color: #333533;
+    font-weight: 900;
+    // color: $level2-color;
+
 
     span {
       @include outline-text;
@@ -40,18 +44,20 @@
 
   .blurb {
     clear: right;
-    border-left: 5px solid white;
+    border-left: 5px solid $border-color;
+    background: $box-color;
+
     margin-right: 30px;
     padding: 25px;
     // height: 400px;
-    // width: 60%;
+    width: 60%;
 
     h2 {
       margin-bottom: 0;
     }
 
     p {
-      width: 60%;
+      // width: 60%;
       margin: 0;
     }
   }

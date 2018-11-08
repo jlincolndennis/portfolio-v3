@@ -14,11 +14,13 @@ export default () => {
   return (
       <div id="home">
         <Header />
-        <Landing />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
+        <div className="content">
+          <Landing />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </div>
         <Colophon />
       </div>
     )

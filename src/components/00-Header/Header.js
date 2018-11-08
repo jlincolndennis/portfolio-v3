@@ -44,16 +44,16 @@ class Header extends Component {
     return (
       <header ref={(ref) => this.header = ref} className={headerStyle.header}>
         <h1>
-          <AnchorLink offset='200' href="#home">
-            J <span>Lincoln</span> Dennis
+          <AnchorLink offset='150' href="#home">
+            J<span>Lincoln</span>Dennis
           </AnchorLink>
         </h1>
 
         <ul>
-          <li><AnchorLink offset='95' href="#about">About</AnchorLink></li>
-          <li><AnchorLink offset='95' href="#experience">Experience</AnchorLink></li>
-          <li><AnchorLink offset='95' href="#projects">Projects</AnchorLink></li>
-          <li><AnchorLink offset='95' href="#contact">Contact</AnchorLink></li>
+          <li><AnchorLink offset='125' href="#about">About</AnchorLink></li>
+          <li><AnchorLink offset='125' href="#experience">Experience</AnchorLink></li>
+          <li><AnchorLink offset='125' href="#projects">Projects</AnchorLink></li>
+          <li><AnchorLink offset='150' href="#contact">Contact</AnchorLink></li>
         </ul>
 
       </header>
