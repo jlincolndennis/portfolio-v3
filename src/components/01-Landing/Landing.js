@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <div id="landing" className={landingStyle.landing}>
 
-        <h1>J<span>Lincoln</span>Dennis</h1>
+        <h1>J<span>Lincoln</span><br className={landingStyle.mobileBreak} />Dennis</h1>
         <ul>
           <li><AnchorLink offset='125' href="#about">About</AnchorLink></li>
           <li><AnchorLink offset='125' href="#experience">Experience</AnchorLink></li>
@@ -28,5 +28,3 @@ const Landing = () => {
 }
 
 export default Landing;
-
-// TODO: Keep line breaks by setting variable margins

@@ -5,21 +5,37 @@
 
 
   h1{
-    font-size: 5.5em;
     margin-bottom: 0;
+    font-size: 5.5em;
     text-align: right;
-    color: #333533;
+    color: $level2-color;
     font-weight: 900;
-    // color: $level2-color;
 
+    .mobile-break {
+      display: none;
+    }
 
     span {
       @include outline-text;
     }
   }
 
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 3.5em;
+      text-align: center;
+
+      .mobile-break {
+        display: block;
+      }
+      span {
+        margin-left: 10px;
+        // color: $level2-color;
+      }
+    }
+  }
+
   ul {
-    // clear: right;
     width: 150px;
     padding-top: 15px;
     float: right;
@@ -42,11 +58,32 @@
     }
   }
 
+  @media screen and (max-width: 450px) {
+    // ul {
+    //   display: none;
+    // }
+    ul {
+      font-size: 1em;
+      float: none;
+      width: auto;
+
+      li {
+        text-align: center;
+        margin-bottom: 10px;
+
+
+        &:hover {
+          padding-right: 0px;
+        }
+
+      }
+    }
+  }
+
   .blurb {
     clear: right;
     border-left: 5px solid $border-color;
     background: $box-color;
-
     margin-right: 30px;
     padding: 25px;
     // height: 400px;
@@ -59,6 +96,25 @@
     p {
       // width: 60%;
       margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .blurb {
+      width: auto;
+      margin-top: 75px;
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 20px 15px;
+
+      h2 {
+        font-size: 1.25em;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: .75em;
+      }
     }
   }
 }
