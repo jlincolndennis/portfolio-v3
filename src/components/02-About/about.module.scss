@@ -30,9 +30,6 @@
       text-align: center;
       margin-bottom: 25px;
 
-      span {
-        @include outline-text;
-      }
     }
 
     .wrapper {
@@ -53,7 +50,38 @@
         color: $link-color;
       }
     }
+  }
 
+  @media screen and (max-width: 450px) {
+    .bio {
+      margin-top: 50px;
 
+      h2 {
+        font-size: 1.25em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    .skills {
+      margin: 0;
+      h1 {
+        font-size: 1.75em;
+      }
+
+      .wrapper {
+        p {
+          font-size: .8em;
+        }
+      }
+
+      h3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.25em
+      }
+    }
   }
 }

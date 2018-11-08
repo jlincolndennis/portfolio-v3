@@ -59,9 +59,7 @@
   }
 
   @media screen and (max-width: 450px) {
-    // ul {
-    //   display: none;
-    // }
+
     ul {
       font-size: 1em;
       float: none;
@@ -104,7 +102,7 @@
       width: auto;
       margin-top: 75px;
       margin-left: 5px;
-      margin-right: 5px;
+      margin-right: 0px;
       padding: 20px 15px;
 
       h2 {
@@ -113,7 +111,7 @@
 
       p {
         margin-top: 5px;
-        font-size: .75em;
+        font-size: 1em;
       }
     }
   }

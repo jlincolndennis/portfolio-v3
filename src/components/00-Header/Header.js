@@ -49,7 +49,7 @@ class Header extends Component {
           </AnchorLink>
         </h1>
 
-        <ul>
+        <ul className={headerStyle.menu}>
           <li><AnchorLink offset='125' href="#about">About</AnchorLink></li>
           <li><AnchorLink offset='125' href="#experience">Experience</AnchorLink></li>
           <li><AnchorLink offset='125' href="#projects">Projects</AnchorLink></li>
