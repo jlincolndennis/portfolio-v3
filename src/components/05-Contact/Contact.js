@@ -6,7 +6,7 @@ const Contact = () => {
     <div id="contact" className={contactStyle.contact}>
       <h1>Let's Chat</h1>
       <div className={contactStyle.contactCopy}>
-      <p>You've made it this far, admit it, you're interested. Get in touch with me! I am always open to dicuss opportunities, projects, comic books, and probably other interesting things too.</p>
+      <p>You've made it this far; admit it, you're interested. Get in touch with me! I am always open to dicuss opportunities, projects, comic books, and probably other interesting things too.</p>
 
       <p>And here, take my <a href="https://drive.google.com/file/d/129oLjhPBj5U1ximblAyND-8iotuGaCrn/view?usp=sharing">resume</a>. It might come in handy!</p>
       </div>

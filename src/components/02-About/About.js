@@ -32,7 +32,7 @@ const About = () => {
       <div className={aboutStyle.bio}>
         <h2>About the Author</h2>
         <p>
-          I recieved my Web Development Merit Badge from the Full Stack Immersive
+          I received my Web Development Merit Badge from the Full Stack Immersive
           Program at <a href="https://www.galvanize.com/boulder/campus">Galvanize Boulder</a> in July 2016. Additionally, I have a background
           in theater, education, and English (via a BFA from the University of Northern
             Colorado). I'm also really good at those claw machines filled with
