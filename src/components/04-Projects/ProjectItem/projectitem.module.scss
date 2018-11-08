@@ -3,10 +3,11 @@
 .item {
   margin: 10px 30px 100px 30px;
   overflow: hidden;
-  padding: 20px;
+  // padding: 20px;
 
   .name {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
     margin-bottom: 5px;
 
@@ -32,25 +33,41 @@
     color: $level1-color;
   }
 
+  .show-more-box {
+    border-left: 5px solid $border-color;
+    background: $box-color;
+    padding: 10px 25px;
+    text-align: center;
+    margin-bottom: 0;
+  }
 
+  .show-more {
+    cursor: pointer;
+    color: $text-color;
+    border: 0;
+    background-color: $box-color;
+  }
+}
 
-    .show-more-box {
-      border-left: 5px solid $border-color;
-      background: $box-color;
-      padding: 10px 25px;
-      text-align: center;
-      margin-bottom: 0;
+@media screen and (max-width: 450px) {
+  .item {
+    margin: 10px 5px 75px 5px;
 
+    .name {
+      flex-wrap: wrap;
+      margin-bottom: 10px;
 
+      .links {
+
+      }
     }
-    .show-more {
-      cursor: pointer;
-      color: $text-color;
-      border: 0;
-      background-color: $box-color;
 
-
+    .tagline {
+      font-size: 1em;
     }
 
-
+    .techlist {
+      font-size: .8em;
+    }
+  }
 }
