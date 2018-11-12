@@ -1,15 +1,9 @@
-// @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
-
-// $main-font: 'Lato', sans-serif;
-
-
 // Color Scheme
 // $body-color: rgb(17, 54, 72);
 // $body-color: #202C39;
 $body-color: #F7FFF7;
 
 $text-color: #707070;
-// $text-color: #707070;
 
 $link-color: #BF1363;
 
@@ -35,9 +29,8 @@ $border-color: #707070;
 $box-color: #EAF2EA;
 
 @mixin outline-text {
-    // font-style: italic;
     color: $link-color;
-    // color: $level3-color;
+
     // text-shadow:
     //   -1px -1px 0 $level1-color,
     //   1px -1px 0 $level1-color,

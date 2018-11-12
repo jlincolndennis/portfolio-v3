@@ -41,3 +41,10 @@ a {
     margin: 50px 5px 50px;
   }
 }
+
+@media screen and (min-width: 451px)  and (max-width: 1024px) {
+  .content {
+    width: auto;
+    margin: 50px 25px 50px;
+  }
+}

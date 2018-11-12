@@ -9,8 +9,6 @@ import Projects from '../components/04-Projects/Projects';
 import Contact from '../components/05-Contact/Contact';
 import Colophon from '../components/06-Colophon/Colophon';
 
-// import AppStyle from '../assets/app.module.scss';
-
 export default () => {
   return (
       <div id="home">
