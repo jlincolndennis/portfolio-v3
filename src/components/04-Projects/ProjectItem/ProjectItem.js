@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
+import AnimateHeight from 'react-animate-height';
 
 import Details from './details.js';
-// import 'react-image-lightbox/style.css';
-
 import itemStyle from './projectitem.module.scss';
-import AnimateHeight from 'react-animate-height';
 
 class ProjectItem extends Component {
   constructor(props) {

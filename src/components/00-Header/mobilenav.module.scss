@@ -1,0 +1,32 @@
+@import "../../assets/scss/_variables.scss";
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  // background: green;
+  background: $body-color;
+
+  border-bottom: 2px solid $box-color;
+  margin-top: 75px;
+  padding: 25px;
+  text-align: right;
+  font-size: 1.25em;
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-nav {
+    display: block;
+  }
+}
