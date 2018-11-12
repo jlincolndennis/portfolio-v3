@@ -11,7 +11,7 @@ class Header extends Component {
 
     this.state = {
       landingHeight: null,
-      showNav: 0,
+      showNav: false,
     }
     this.handleScroll = this.handleScroll.bind(this);
     this.debouncedFunction = debounce(this.handleScroll , 16)
