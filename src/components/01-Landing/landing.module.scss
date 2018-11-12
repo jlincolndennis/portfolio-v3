@@ -3,7 +3,6 @@
 .landing {
   margin-bottom: 200px;
 
-
   h1{
     margin-bottom: 0;
     font-size: 5.5em;
@@ -20,7 +19,7 @@
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 629px) {
     h1 {
       font-size: 3.5em;
       text-align: center;
@@ -32,6 +31,12 @@
         margin-left: 10px;
         // color: $level2-color;
       }
+    }
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 1023px){
+    h1 {
+      font-size: 4.5em;
     }
   }
 
