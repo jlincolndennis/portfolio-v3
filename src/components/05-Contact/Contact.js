@@ -8,7 +8,7 @@ const Contact = () => {
       <div className={contactStyle.contactCopy}>
       <p>You've made it this far; admit it, you're interested. Get in touch with me! I am always open to dicuss opportunities, projects, comic books, and probably other interesting things too.</p>
 
-      <p>And here, take my <a href="https://drive.google.com/file/d/129oLjhPBj5U1ximblAyND-8iotuGaCrn/view?usp=sharing">resume</a>. It might come in handy!</p>
+      <p>And here, take my <a href="https://drive.google.com/file/d/1WTCAeIYLKK3ZEJXN3N8dd4ro3Q6jpJkh/view?usp=sharing">resume</a>. It might come in handy!</p>
       </div>
 
       <h2>Contact</h2>
