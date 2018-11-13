@@ -16,8 +16,6 @@ class Header extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.debouncedFunction = debounce(this.handleScroll , 16)
     this.toggleMobileNav = this.toggleMobileNav.bind(this);
-
-
   }
 
   handleScroll() {
@@ -51,10 +49,10 @@ class Header extends Component {
 
   render() {
     const { showNav } = this.state;
-
     return (
       <div>
       {showNav && <MobileNav toggle={this.toggleMobileNav}/>}
+
       <header ref={(ref) => this.header = ref} className={headerStyle.header}>
         <h1>
           <AnchorLink offset='150' href="#home">
@@ -71,13 +69,11 @@ class Header extends Component {
 
         <div className={headerStyle.mobileMenu}>
           <button onClick={this.toggleMobileNav} className={headerStyle.hamburger}>&#9776;</button>
-
         </div>
 
       </header>
       </div>
     )
-
   }
 }
 

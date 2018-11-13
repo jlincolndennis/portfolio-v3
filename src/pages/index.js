@@ -29,6 +29,7 @@ export default () => {
           <meta property="og:url" content="https://jlincolndennis.com/" />
           <meta property="og:image" content="https://jlincolndennis.com/og-image.jpg" />
         </Helmet>
+        
         <Header />
         <div className="content">
           <Landing />

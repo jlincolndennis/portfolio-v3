@@ -46,7 +46,6 @@ class MobileNav extends Component {
 
     )
   }
-
 }
 
 export default MobileNav;

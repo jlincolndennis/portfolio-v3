@@ -11,7 +11,6 @@ class ProjectItem extends Component {
     this.state = {
       expandDetails: false,
       height: 0,
-
     }
 
     this.renderTechList = this.renderTechList.bind(this);
@@ -69,12 +68,9 @@ class ProjectItem extends Component {
               onClick={this.toggle}>{expandDetails ? 'Show Less' : 'Details...'}
             </button>
           </p>
-
         </div>
-
     )
   }
-
 }
 
 export default ProjectItem;

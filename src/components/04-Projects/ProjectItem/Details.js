@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { withPrefix } from 'gatsby'
+import { withPrefix } from 'gatsby';
 import Lightbox from 'react-image-lightbox';
 import detailsStyle from './details.module.scss';
 
@@ -38,27 +38,28 @@ class Details extends Component {
               {imageThumbs}
             </div>
             <p className={detailsStyle.embiggenText}>(Click an image to embiggen)</p>
+
             {isOpen && (
-            <Lightbox
-              mainSrc={imageList[photoIndex]}
-              nextSrc={imageList[(photoIndex + 1) % imageList.length]}
-              prevSrc={imageList[(photoIndex + imageList.length - 1) % imageList.length]}
-              animationDisabled={false}
-              enableZoom={false}
-              imagePadding={50}
-              onCloseRequest={() => this.setState({ isOpen: false })}
-              onMovePrevRequest={() =>
-                this.setState({
-                  photoIndex: (photoIndex + imageList.length - 1) % imageList.length,
-                })
-              }
-              onMoveNextRequest={() =>
-                this.setState({
-                  photoIndex: (photoIndex + 1) % imageList.length,
-                })
-              }
-            />
-          )}
+              <Lightbox
+                mainSrc={imageList[photoIndex]}
+                nextSrc={imageList[(photoIndex + 1) % imageList.length]}
+                prevSrc={imageList[(photoIndex + imageList.length - 1) % imageList.length]}
+                animationDisabled={false}
+                enableZoom={false}
+                imagePadding={50}
+                onCloseRequest={() => this.setState({ isOpen: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + imageList.length - 1) % imageList.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    photoIndex: (photoIndex + 1) % imageList.length,
+                  })
+                }
+              />
+            )}
           </div>
         )
       }
