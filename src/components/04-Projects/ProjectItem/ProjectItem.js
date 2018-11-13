@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AnimateHeight from 'react-animate-height';
 
-import Details from './details.js';
+import Details from './Details.js';
 import itemStyle from './projectitem.module.scss';
 
 class ProjectItem extends Component {
