@@ -89,7 +89,7 @@ const projectData = [
     name: "This Week In Marvel History",
     url: {
       visit: "http://jlincolndennis.github.io/marvel-history.github.io/index.html",
-      code: "https://github.com/blakeface/whereabouts"
+      code: "https://github.com/jlincolndennis/marvel-history"
     },
     techlist: [
       "jQuery",
