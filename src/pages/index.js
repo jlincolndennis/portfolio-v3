@@ -22,6 +22,9 @@ export default () => {
           <meta name="msapplication-TileColor" content="#b91d47" />
           <meta name="theme-color" content="#ffffff" />
 
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@jlincolndennis" />
+          <meta name="twitter:creator" content="@jlincolndennis" />
           <meta property="og:image:height" content="1257" />
           <meta property="og:image:width" content="2400" />
           <meta property="og:description" content="Hi. I'm a web developer living in Colorado. I like making things with words. I'm passionate about art, creativity, the future, and equality. Oh, and comic books. And cats. And lots of awesome things, really." />
@@ -29,7 +32,7 @@ export default () => {
           <meta property="og:url" content="https://jlincolndennis.com/" />
           <meta property="og:image" content="https://jlincolndennis.com/og-image.jpg" />
         </Helmet>
-        
+
         <Header />
         <div className="content">
           <Landing />
