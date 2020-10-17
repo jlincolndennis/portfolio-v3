@@ -2,4 +2,4 @@
   from = "/marvel-history/*"
   to = "https://marvel-history.netlify.app/marvel-history/:splat"
   status = 200
-  force = false
+  force = true
