@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/marvel-history/*"
-  to = "https://ecstatic-mirzakhani-f49f53.netlify.app/:splat"
-  status = 200
-  force = false
